@@ -1,0 +1,44 @@
+const numero = 3;
+ const enumero = 3;
+ const NumeroPar = (numero % 2) === 0;
+ const Numeroimpar = (enumero % 2) !== 0;
+ 
+
+
+
+console.log(NumeroPar);
+console.log(Numeroimpar);
+
+if (NumeroPar) {
+    console.log('numeropar');
+}
+
+
+    
+ if (Numeroimpar) {
+    console.log('numeroimpar');
+}
+
+///// ou//////
+
+ const numero = 3;
+  const NumeroPar = (numero % 2) === 0;
+
+ 
+console.log(NumeroPar);
+
+if (NumeroPar) {
+    console.log('numero_par');
+} else {
+       console.log('numero_impar');
+}
+
+------ou------
+const numero = 2  ;
+  const NumeroPar = (numero % 2) === 0;
+
+ 
+console.log(NumeroPar);
+
+if ((numero % 2) === 0) {  
+    console.log('num
