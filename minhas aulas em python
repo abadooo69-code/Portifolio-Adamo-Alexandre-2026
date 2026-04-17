@@ -1,0 +1,74 @@
+def exibir_poema(data_extenso, *args, **kwargs):
+ texto = "\n".join(args)
+ meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in kwargs.items()])
+ mensagem = f"{data_extenso}\n\n{texto}\n\n{meta_dados}"
+ print(mensagem)
+
+
+exibir_poema(
+ "Zen do Python",
+
+"Bonito é melhor que feio.",
+"Explícito é melhor que implícito.",
+
+"Simples é melhor que complexo.",
+
+"Complexo é melhor que complicado.",
+
+"Plano é melhor que aninhado.",
+
+"Esparso é melhor que denso.",
+
+"Legibilidade importa.",
+
+"Casos especiais não são especiais o suficiente para quebrar as regras.",
+
+"Embora a praticidade supere a pureza.",
+
+"Erros nunca devem passar silenciosamente.",
+"A menos que sejam explicitamente silenciados.",
+
+"Diante da ambiguidade, recuse a tentação de adivinhar.",
+
+"Deve haver uma — e de preferência apenas uma — maneira óbvia de fazer isso.",
+
+"Embora essa maneira possa não ser óbvia à primeira vista, a menos que você seja holandês.",
+
+"Agora é melhor que nunca.",
+
+"Embora nunca seja frequentemente melhor que *agora*.",
+
+"Se a implementação for difícil de explicar, é uma má ideia.",
+
+"Se a implementação for fácil de explicar, pode ser uma boa ideia.",
+
+"Namespaces são uma ideia genial! Vamos fazer mais dessas!",
+ autor="Tim Peters",
+ ano=1999,
+)
+
+[Running] python -u "c:\AKIN\arg_kwargs.py"
+Zen do Python
+
+Bonito � melhor que feio.
+Expl�cito � melhor que impl�cito.
+Simples � melhor que complexo.
+Complexo � melhor que complicado.
+Plano � melhor que aninhado.
+Esparso � melhor que denso.
+Legibilidade importa.
+Casos especiais n�o s�o especiais o suficiente para quebrar as regras.
+Embora a praticidade supere a pureza.
+Erros nunca devem passar silenciosamente.
+A menos que sejam explicitamente silenciados.
+Diante da ambiguidade, recuse a tenta��o de adivinhar.
+Deve haver uma � e de prefer�ncia apenas uma � maneira �bvia de fazer isso.
+Embora essa maneira possa n�o ser �bvia � primeira vista, a menos que voc� seja holand�s.
+Agora � melhor que nunca.
+Embora nunca seja frequentemente melhor que *agora*.
+Se a implementa��o for dif�cil de explicar, � uma m� ideia.
+Se a implementa��o for f�cil de explicar, pode ser uma boa ideia.
+Namespaces s�o uma ideia genial! Vamos fazer mais dessas!
+
+Autor: Tim Peters
+Ano: 1999
